@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A one-player Phaser game where a judgmental vending machine dispenses snacks based on mood, hidden cravings, and inventory debt." />
+    <title>Judgmental Vending Machine</title>
+
+    <style>
+      :root {
+        --bg: #101218;
+        --panel: #171a22;
+        --accent: #f2b84b;
+        --text: #e8e6df;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      }
+
+      #game {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:
+          radial-gradient(circle at 20% 10%, rgba(242, 184, 75, 0.08), transparent 35%),
+          radial-gradient(circle at 80% 90%, rgba(96, 165, 250, 0.08), transparent 40%),
+          var(--bg);
+      }
+
+      #game canvas {
+        display: block;
+        border-radius: 12px;
+        box-shadow:
+          0 0 0 1px rgba(255, 255, 255, 0.04),
+          0 18px 60px rgba(0, 0, 0, 0.45);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game"></div>
+
+    <noscript>
+      <div style="position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; padding: 2rem; text-align: center;">
+        Please enable JavaScript to play Judgmental Vending Machine.
+      </div>
+    </noscript>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
