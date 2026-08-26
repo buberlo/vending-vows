@@ -1,0 +1,23 @@
+{
+  "name": "judgmental-vending-machine",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A one-player Phaser game where a judgmental vending machine dispenses snacks based on mood, cravings, and inventory debt.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "phaser": "^3.85.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
